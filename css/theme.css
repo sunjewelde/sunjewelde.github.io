@@ -328,7 +328,7 @@ fieldset[disabled] .btn-danger.active {
   background-color: #2e6da4;
 }
 .user-box1 {
-  background: transparent url("http://lorempixel.com/900/600") no-repeat top center fixed;
+  background: transparent url("../images/bg.jpg") no-repeat top center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -368,6 +368,13 @@ fieldset[disabled] .btn-danger.active {
 }
 .navbar-nav {
   padding-top: 20px;
+}
+.user-textarea1 {
+  padding: 3px 0 0 25px;
+  margin-bottom: 10px;
+}
+.user-color1 {
+  background-color: #000;
 }
 .navbar-default {
   background-image: -webkit-linear-gradient(top, rgba(26, 26, 26, 0) 0%, transparent 100%);

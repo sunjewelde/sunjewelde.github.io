@@ -8,6 +8,8 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Hiroyuki | Profile</title>
 
+    <!-- YUI Reset CSS -->
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.0.0/build/cssreset/reset-min.css">
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/theme.css" rel="stylesheet">
@@ -19,8 +21,8 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+ <body>
+    <nav class="navbar navbar-default navbar-fixed-top user-color1" role="navigation">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -30,7 +32,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="https://sunjewelde.github.io/"><link href="index.html"><img src="http://lorempixel.com/50/50" height="50" width="50" alt=""></a>
+          <a class="navbar-brand" href="https://sunjewelde.github.io/"><link href="index.html"><img src="images/main3_btn.png" height="42" width="50" alt=""></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -39,7 +41,7 @@
             <li class="active"><a href="https://sunjewelde.github.io/">Home<span class="sr-only">(current)</span></a></li>
             <li><a href="#profile">Profile</a></li>
             <li><a href="#works">Work</a></li>
-            <li><a href="https://github.com/sunjewelde">GitHubアカウント</a></li>
+            <li><a href="https://github.com/sunjewelde">GitHub Account</a></li>
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
@@ -52,7 +54,7 @@
 <div class="user-box1">
   <div class="container">
     <div class="user-mainimage">
-      <img src="http://lorempixel.com/600/400" alt="" class="img-responsive center-block">
+      <img src="images/main3.png" height="289" width="240" alt="" class="img-responsive center-block">
     </div><!-- .mainimage-->
 
     <section id="user-info" class="user-info">
@@ -66,49 +68,96 @@
 </div>
 
 <section id="profile">
-  <<div class="container">
+  <div class="container">
       <h2>Profile</h2>
         <dl>
           <dt>Name</dt>
-            <dd>Hiroyuki Shibamura</dd>
+            <dd class="user-textarea1">Hiroyuki Shibamura</dd>
           <dt>Home</dt>
-            <dd>Sendai Japan</dd>
+            <dd class="user-textarea1">Sendai Japan</dd>
           <dt>Hobby</dt>
-            <dd>Cycling, Traveling, Scuba-diving, Investment</dd>
+            <dd class="user-textarea1">Cycling, Traveling, Scuba-diving, Investment</dd>
           <dt>Software</dt>
-            <dd>Dreamweaver CS6,Flash CS6,Illustrator CS6,Photoshop CS6, SublimeText2</dd>
+            <dd class="user-textarea1">Dreamweaver CS6,Flash CS6,Illustrator CS6,Photoshop CS6, SublimeText2</dd>
         </dl>
-        <h2></h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Liberiusque artifex quisquis reliquaque, ego agatur enim appellat malis animal, honesta veri deteriora legerint geometria arridens patre putarent, fatendum istius disciplinam ars gloriosis quanti c exitum magnos maximis, eriguntur legant, dubitemus odit tritani idcirco natus ipsius quas, instituit institutionem aliam titillaret adversa, fecerint erimus iucunditatem cyrenaicos magnos virtus blanditiis concordia, susciperet unam conformavit acri apertam audita video, cuiquam temperantia dubitat exeamus postea debilitatem chrysippo verear inciderit aegritudo, erimus lucilius agam magna voluptate.</p>
+        <h2>Recent activity</h2>
+        <p>I am trying to develop a web application with ruby on rails. The following works are kind of my practice app. My next target is to release something new web services.</p>
   </div>
 </section>
 
 <section id="works">
   <div class="container">
-    <<h2>Works</h2>
-    <h3>Message Board</h3>
-    <h3>Twitter Clone</h3>
-    <h3>モノリスト</h3>
+    <h2>Works</h2>
+    <ul>
+      <li class="user-textarea1">Message Board</li>
+      <li class="user-textarea1">Twitter Clone</li>
+      <li class="user-textarea1">モノリスト</li>
+    </ul>
   </div>
 </section>
 
 <section id="contact" class="contact">
+
   <div class="container">
-    <h2>Contact</h2>
-          <form action="" method="POST" class="form-horizontal" role="form">
+      <h2>Contact</h2>
+          <form action="mail.php" method="POST" class="form-horizontal" role="form">
             <div class="row">
               <div class="col-sm-6">
                 <label for="inputName" class="col-sm-2">Name</label>
-                <input type="text" name="name" id="inputName" class="form-control" value="" required="required" pattern="" title="" placeholder="">
+                <input type="text" name="お名前" class="form-control" value="" required="required" />
               </div>
               <div class="col-sm-6">
                 <label for="inputName" class="col-sm-2">Email</label>
-                <input type="email" name="email" id="inputEmail" class="form-control" value="" required="required" title="" placeholder="">
+                <input type="email" name="Email" id="inputEmail" class="form-control" value="" required="required" />
               </div>
             </div>
-            <textarea name="message" id="inputMessage" class="form-control"></textarea>
+            <textarea name="お問い合わせ内容" id="inputMessage" class="form-control" /></textarea>
             <button type="submit" class="btn btn-primary pull-right">Submit</button>
           </form>
+
+
+
+          <!-- <form method="post" action="mail.php">
+              <table class="formTable">
+                <tr>
+                  <th>ご用件</th>
+                  <td><select name="ご用件">
+                      <option value="">選択してください</option>
+                      <option value="ご質問・お問い合わせ">ご質問・お問い合わせ</option>
+                      <option value="リンクについて">リンクについて</option>
+                    </select></td>
+                </tr>
+                <tr>
+                  <th>お名前</th>
+                  <td><input size="20" type="text" name="お名前" /> ※必須</td>
+                </tr>
+                <tr>
+                  <th>電話番号（半角）</th>
+                  <td><input size="30" type="text" name="電話番号" /></td>
+                </tr>
+                <tr>
+                  <th>Mail（半角）</th>
+                  <td><input size="30" type="text" name="Email" /> ※必須</td>
+                </tr>
+                <tr>
+                  <th>性別</th>
+                  <td><input type="radio" name="性別" value="男" /> 男　
+                    <input type="radio" name="性別" value="女" /> 女 </td>
+                </tr>
+                <tr>
+                  <th>サイトを知ったきっかけ</th>
+                  <td><input name="サイトを知ったきっかけ[]" type="checkbox" value="友人・知人" /> 友人・知人　
+                    <input name="サイトを知ったきっかけ[]" type="checkbox" value="検索エンジン" /> 検索エンジン</td>
+                </tr>
+                <tr>
+                  <th>お問い合わせ内容<br /></th>
+                  <td><textarea name="お問い合わせ内容" cols="50" rows="5"></textarea></td>
+                </tr>
+              </table>
+              <p align="center">
+                <input type="submit" value="　 確認 　" />　<input type="reset" value="リセット" />
+              </p>
+          </form> -->
   </div>
 </section>
 
@@ -121,5 +170,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.js"></script>
+
   </body>
 </html>
